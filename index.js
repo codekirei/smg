@@ -32,7 +32,6 @@ const addDateNum      = x.addDateNum
 const addNav          = x.addNav
 const addPath         = x.addPath
 const byReverseDate   = x.byReverseDate
-const compile         = x.compile
 const defaultTemplate = x.defaultTemplate
 const ert             = x.ert
 const injectPostData  = x.injectPostData
@@ -107,14 +106,13 @@ module.exports = class Smg {
   }
 
   /**
-    Read and compile templates.
+    Read templates.
 
     @param {String|String[]} glob - glob of paths to templates
     @returns {Object} templates: {foo: renderFn, bar: renderFn}
    */
   * templates(glob) {
     return P.resolve(yield readTemplates(glob))
-      .map(compile(this.opts.jade))
       .map(arToOb)
       .reduce(flatOb)
   }

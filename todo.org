@@ -1,0 +1,2 @@
+- [ ] switch from bluebird Promise transforms to native array transforms
+- [ ] combine default author and template opts under 'defaults'
