@@ -43,7 +43,7 @@ const render          = x.render
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-module.exports = class Jamb {
+module.exports = class Smg {
   constructor(custom) {
     const opts = merge({}, defaults, custom)
     Object.keys(opts).map(k => this[k] = opts[k])
