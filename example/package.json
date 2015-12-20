@@ -1,0 +1,8 @@
+{
+  "name": "smg-example",
+  "private": "true",
+  "dependencies": {
+    "mithril": "^0.2.1",
+    "mithril-node-render": "^0.4.1"
+  }
+}
