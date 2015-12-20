@@ -1,0 +1,24 @@
+{
+  "name": "smg",
+  "version": "0.1.0",
+  "description": "static markup generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codekirei/smg.git"
+  },
+  "keywords": [
+    "static",
+    "markup",
+    "generator"
+  ],
+  "author": "Jacob Blakely (codekirei)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codekirei/smg/issues"
+  },
+  "homepage": "https://github.com/codekirei/smg#readme"
+}
