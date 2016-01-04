@@ -79,7 +79,7 @@ module.exports = class Smg {
       .map(x.ert(this.wpm))
       .map(x.addDateOb)
       .map(x.addDate)
-      .map(x.xaddDateNum)
+      .map(x.addDateNum)
       .then(_ => _.sort(x.byReverseDate))
   }
 

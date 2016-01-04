@@ -3,6 +3,7 @@
 const Smg = require('../')
 
 const url = 'bobloblawlawblog.com'
+
 const cfg =
   { needPosts: ['index']
   , nav:

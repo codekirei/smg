@@ -17,7 +17,7 @@ const body = require('./modules/body')
 const content = data =>
   m('section'
     , { class: 'content' }
-    , data.content
+    , m.trust(data.content)
   )
 
 const page = data => render(data,

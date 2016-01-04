@@ -1,2 +1,8 @@
-- [ ] switch from bluebird Promise transforms to native array transforms
+- [ ] finish examples
+- [ ] beautify html output
 - [ ] combine default author and template opts under 'defaults'
+- [ ] simplify promise.resolves?
+- [ ] simplify template logic?
+
+- [ ] tests
+- [ ] ci
