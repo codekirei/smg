@@ -1,6 +1,6 @@
-- [ ] finish examples (add more templates)
-- [ ] avoid unnecessary mutation
 - [ ] beautify html output
+- [ ] finish examples (add logic for index and post templates)
+- [ ] avoid unnecessary mutation
 - [ ] combine default author and template opts under 'defaults'
 - [ ] simplify promise.resolves?
 - [ ] simplify template logic?
