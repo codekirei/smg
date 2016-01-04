@@ -1,4 +1,5 @@
-- [ ] finish examples
+- [ ] finish examples (add more templates)
+- [ ] avoid unnecessary mutation
 - [ ] beautify html output
 - [ ] combine default author and template opts under 'defaults'
 - [ ] simplify promise.resolves?
