@@ -20,7 +20,7 @@ const content = data =>
     , m.trust(data.content)
   )
 
-const page = data => render(data, [head , body(content)])
+const page = data => render(data, [head, body(content)])
 
 //----------------------------------------------------------
 // exports

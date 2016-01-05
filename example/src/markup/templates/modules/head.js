@@ -11,7 +11,9 @@ const m = require('mithril')
 //----------------------------------------------------------
 const head = data =>
   m('head',
-    [m('title', data.title)]
+    [ m('title', data.title)
+    , m('meta', { name: 'description', content: data.description})
+    ]
   )
 
 //----------------------------------------------------------

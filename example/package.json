@@ -2,6 +2,8 @@
   "name": "smg-example",
   "private": "true",
   "dependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
     "mithril": "^0.2.1",
     "mithril-node-render": "^0.4.1"
   }
