@@ -6,6 +6,7 @@
 const Smg = require('../')
 const gulp = require('gulp')
 const del = require('del')
+const spawn = require('child_process').spawn
 
 //----------------------------------------------------------
 // config
@@ -39,8 +40,12 @@ const cfg =
 //----------------------------------------------------------
 // tasks
 //----------------------------------------------------------
+let proc
 const smg = () => new Smg(cfg)
-const watch = () => gulp.watch('src/**/*.{js,md}', ['smg'])
+const watch = () => gulp.watch('src/**/*.{js,md}', () => {
+  if (proc && proc.exitCode === null) proc.kill()
+  proc = spawn('gulp', ['smg'], {stdio: 'inherit'})
+})
 const clean = () => del([cfg.paths.dist])
 
 gulp.task('smg', smg)
